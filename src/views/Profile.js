@@ -356,7 +356,8 @@ function Profile() {
                             Connect to the {CONFIG.NETWORK.NAME} network
                           </span>
                           <s.SpacerSmall />
-                          <button
+                          {/* Open at April, 5 */}
+                          {/* <button
                             className="bg-lightBlue-500 active:bg-lightBlue-600 uppercase text-white font-bold hover:shadow-md shadow text-xs px-4 py-2 rounded outline-none focus:outline-none sm:mr-0 mb-1 ease-linear transition-all duration-150"
                             style={{
                               margin: "5px",
@@ -374,7 +375,10 @@ function Profile() {
                             }}
                           >
                             CONNECT
-                          </button>
+                          </button> */}
+                          <h3 className="text-4xl font-semibold leading-normal mb-2 text-blueGray-700 mb-2">
+                            Public Sale - April, 5, 2022
+                          </h3>
                           {blockchain.errorMsg !== "" ? (
                             <>
                               <s.SpacerSmall />
