@@ -1,0 +1,11 @@
+:root {
+  --primary: #000000;
+  --primary-text: #b84eff;
+  --secondary: #c875ff;
+  --secondary-text: #ffffff;
+  --accent: #0198a3;
+  --accent-text: #ffffff;
+  --hover: #53ffff;
+  --round-button: #ffffffde;
+  --round-button-hover: rgba(168, 245, 255, 0.898);
+}
