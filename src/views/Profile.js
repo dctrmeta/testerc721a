@@ -104,6 +104,16 @@ export const StyledLink = styled.a`
   text-decoration: none;
 `;
 
+export const StyledLogo = styled.img`
+  width: 100px;
+  border-radius: 10%;
+  @media (min-width: 767px) {
+    width: 100px;
+  }
+  transition: width 0.5s;
+  transition: height 0.5s;
+`;
+
 function Profile() {
   const dispatch = useDispatch();
   const blockchain = useSelector((state) => state.blockchain);
@@ -437,6 +447,24 @@ function Profile() {
                           </s.Container>
                         </>
                       )}
+                      <div className="w-full px-4 lg:order-3 lg:text-right lg:self-center">
+                        <div className="py-6 px-3 mt-24 sm:mt-0 " style={{textAlign: 'center'}}>
+                          <a href="https://raritysniper.com/">
+                            <StyledLogo
+                              style={{ display: 'inline', marginRight: '10px'}}
+                              alt={"logo"}
+                              src={"/config/images/logo2-black.png"}
+                            />
+                          </a>
+                          <a href="https://wenmint.io/drop/the-fucking-dictator-club">
+                            <StyledLogo
+                              style={{ display: 'inline', marginLeft: '10px'}}
+                              alt={"logo"}
+                              src={"/config/images/badge.png"}
+                            />
+                          </a>
+                        </div>
+                      </div>
                     </>
                   )}
                 </div>
