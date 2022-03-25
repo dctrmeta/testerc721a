@@ -1,24 +1,73 @@
 [
 	{
-		"inputs": [
-			{
-				"internalType": "string",
-				"name": "_name",
-				"type": "string"
-			},
-			{
-				"internalType": "string",
-				"name": "_symbol",
-				"type": "string"
-			},
-			{
-				"internalType": "string",
-				"name": "_initBaseURI",
-				"type": "string"
-			}
-		],
+		"inputs": [],
 		"stateMutability": "nonpayable",
 		"type": "constructor"
+	},
+	{
+		"inputs": [],
+		"name": "ApprovalCallerNotOwnerNorApproved",
+		"type": "error"
+	},
+	{
+		"inputs": [],
+		"name": "ApprovalQueryForNonexistentToken",
+		"type": "error"
+	},
+	{
+		"inputs": [],
+		"name": "ApprovalToCurrentOwner",
+		"type": "error"
+	},
+	{
+		"inputs": [],
+		"name": "ApproveToCaller",
+		"type": "error"
+	},
+	{
+		"inputs": [],
+		"name": "BalanceQueryForZeroAddress",
+		"type": "error"
+	},
+	{
+		"inputs": [],
+		"name": "MintToZeroAddress",
+		"type": "error"
+	},
+	{
+		"inputs": [],
+		"name": "MintZeroQuantity",
+		"type": "error"
+	},
+	{
+		"inputs": [],
+		"name": "OwnerQueryForNonexistentToken",
+		"type": "error"
+	},
+	{
+		"inputs": [],
+		"name": "TransferCallerNotOwnerNorApproved",
+		"type": "error"
+	},
+	{
+		"inputs": [],
+		"name": "TransferFromIncorrectOwner",
+		"type": "error"
+	},
+	{
+		"inputs": [],
+		"name": "TransferToNonERC721ReceiverImplementer",
+		"type": "error"
+	},
+	{
+		"inputs": [],
+		"name": "TransferToZeroAddress",
+		"type": "error"
+	},
+	{
+		"inputs": [],
+		"name": "URIQueryForNonexistentToken",
+		"type": "error"
 	},
 	{
 		"anonymous": false,
@@ -115,29 +164,42 @@
 		"type": "event"
 	},
 	{
-		"inputs": [
+		"inputs": [],
+		"name": "MAX_PUBLIC_MINT",
+		"outputs": [
 			{
-				"internalType": "address[100]",
-				"name": "_users",
-				"type": "address[100]"
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
 			}
 		],
-		"name": "add100PresaleUsers",
-		"outputs": [],
-		"stateMutability": "nonpayable",
+		"stateMutability": "view",
 		"type": "function"
 	},
 	{
-		"inputs": [
+		"inputs": [],
+		"name": "MAX_SUPPLY",
+		"outputs": [
 			{
-				"internalType": "address",
-				"name": "_user",
-				"type": "address"
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
 			}
 		],
-		"name": "addPresaleUser",
-		"outputs": [],
-		"stateMutability": "nonpayable",
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "PROVENANCE",
+		"outputs": [
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			}
+		],
+		"stateMutability": "view",
 		"type": "function"
 	},
 	{
@@ -172,32 +234,6 @@
 				"internalType": "uint256",
 				"name": "",
 				"type": "uint256"
-			}
-		],
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"inputs": [],
-		"name": "baseExtension",
-		"outputs": [
-			{
-				"internalType": "string",
-				"name": "",
-				"type": "string"
-			}
-		],
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"inputs": [],
-		"name": "baseURI",
-		"outputs": [
-			{
-				"internalType": "string",
-				"name": "",
-				"type": "string"
 			}
 		],
 		"stateMutability": "view",
@@ -261,25 +297,12 @@
 	},
 	{
 		"inputs": [],
-		"name": "maxMintAmount",
+		"name": "isFuckListActive",
 		"outputs": [
 			{
-				"internalType": "uint256",
+				"internalType": "bool",
 				"name": "",
-				"type": "uint256"
-			}
-		],
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"inputs": [],
-		"name": "maxSupply",
-		"outputs": [
-			{
-				"internalType": "uint256",
-				"name": "",
-				"type": "uint256"
+				"type": "bool"
 			}
 		],
 		"stateMutability": "view",
@@ -287,11 +310,6 @@
 	},
 	{
 		"inputs": [
-			{
-				"internalType": "address",
-				"name": "_to",
-				"type": "address"
-			},
 			{
 				"internalType": "uint256",
 				"name": "_mintAmount",
@@ -304,6 +322,19 @@
 		"type": "function"
 	},
 	{
+		"inputs": [
+			{
+				"internalType": "uint8",
+				"name": "numberOfTokens",
+				"type": "uint8"
+			}
+		],
+		"name": "mintFuckList",
+		"outputs": [],
+		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
 		"inputs": [],
 		"name": "name",
 		"outputs": [
@@ -311,6 +342,25 @@
 				"internalType": "string",
 				"name": "",
 				"type": "string"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "addr",
+				"type": "address"
+			}
+		],
+		"name": "numAvailableToMint",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
 			}
 		],
 		"stateMutability": "view",
@@ -349,92 +399,21 @@
 		"type": "function"
 	},
 	{
-		"inputs": [
-			{
-				"internalType": "bool",
-				"name": "_state",
-				"type": "bool"
-			}
-		],
-		"name": "pause",
+		"inputs": [],
+		"name": "renounceOwnership",
 		"outputs": [],
 		"stateMutability": "nonpayable",
 		"type": "function"
 	},
 	{
-		"inputs": [],
-		"name": "paused",
-		"outputs": [
-			{
-				"internalType": "bool",
-				"name": "",
-				"type": "bool"
-			}
-		],
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"inputs": [],
-		"name": "presaleCost",
-		"outputs": [
+		"inputs": [
 			{
 				"internalType": "uint256",
-				"name": "",
+				"name": "n",
 				"type": "uint256"
 			}
 		],
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"inputs": [
-			{
-				"internalType": "address",
-				"name": "",
-				"type": "address"
-			}
-		],
-		"name": "presaleWallets",
-		"outputs": [
-			{
-				"internalType": "bool",
-				"name": "",
-				"type": "bool"
-			}
-		],
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"inputs": [
-			{
-				"internalType": "address",
-				"name": "_user",
-				"type": "address"
-			}
-		],
-		"name": "removePresaleUser",
-		"outputs": [],
-		"stateMutability": "nonpayable",
-		"type": "function"
-	},
-	{
-		"inputs": [
-			{
-				"internalType": "address",
-				"name": "_user",
-				"type": "address"
-			}
-		],
-		"name": "removeWhitelistUser",
-		"outputs": [],
-		"stateMutability": "nonpayable",
-		"type": "function"
-	},
-	{
-		"inputs": [],
-		"name": "renounceOwnership",
+		"name": "reserve",
 		"outputs": [],
 		"stateMutability": "nonpayable",
 		"type": "function"
@@ -491,6 +470,19 @@
 		"type": "function"
 	},
 	{
+		"inputs": [],
+		"name": "saleIsActive",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
 		"inputs": [
 			{
 				"internalType": "address",
@@ -512,20 +504,7 @@
 		"inputs": [
 			{
 				"internalType": "string",
-				"name": "_newBaseExtension",
-				"type": "string"
-			}
-		],
-		"name": "setBaseExtension",
-		"outputs": [],
-		"stateMutability": "nonpayable",
-		"type": "function"
-	},
-	{
-		"inputs": [
-			{
-				"internalType": "string",
-				"name": "_newBaseURI",
+				"name": "baseURI_",
 				"type": "string"
 			}
 		],
@@ -538,7 +517,7 @@
 		"inputs": [
 			{
 				"internalType": "uint256",
-				"name": "_newCost",
+				"name": "_cost",
 				"type": "uint256"
 			}
 		],
@@ -550,12 +529,17 @@
 	{
 		"inputs": [
 			{
-				"internalType": "uint256",
-				"name": "_newCost",
-				"type": "uint256"
+				"internalType": "address[]",
+				"name": "addresses",
+				"type": "address[]"
+			},
+			{
+				"internalType": "uint8",
+				"name": "numAllowedToMint",
+				"type": "uint8"
 			}
 		],
-		"name": "setPresaleCost",
+		"name": "setFuckList",
 		"outputs": [],
 		"stateMutability": "nonpayable",
 		"type": "function"
@@ -563,12 +547,38 @@
 	{
 		"inputs": [
 			{
-				"internalType": "uint256",
-				"name": "_newmaxMintAmount",
-				"type": "uint256"
+				"internalType": "bool",
+				"name": "_isFuckListActive",
+				"type": "bool"
 			}
 		],
-		"name": "setmaxMintAmount",
+		"name": "setIsFuckListActive",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "provenance",
+				"type": "string"
+			}
+		],
+		"name": "setProvenance",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bool",
+				"name": "newState",
+				"type": "bool"
+			}
+		],
+		"name": "setSaleState",
 		"outputs": [],
 		"stateMutability": "nonpayable",
 		"type": "function"
@@ -600,49 +610,6 @@
 				"internalType": "string",
 				"name": "",
 				"type": "string"
-			}
-		],
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"inputs": [
-			{
-				"internalType": "uint256",
-				"name": "index",
-				"type": "uint256"
-			}
-		],
-		"name": "tokenByIndex",
-		"outputs": [
-			{
-				"internalType": "uint256",
-				"name": "",
-				"type": "uint256"
-			}
-		],
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"inputs": [
-			{
-				"internalType": "address",
-				"name": "owner",
-				"type": "address"
-			},
-			{
-				"internalType": "uint256",
-				"name": "index",
-				"type": "uint256"
-			}
-		],
-		"name": "tokenOfOwnerByIndex",
-		"outputs": [
-			{
-				"internalType": "uint256",
-				"name": "",
-				"type": "uint256"
 			}
 		],
 		"stateMutability": "view",
@@ -717,61 +684,10 @@
 		"type": "function"
 	},
 	{
-		"inputs": [
-			{
-				"internalType": "address",
-				"name": "_owner",
-				"type": "address"
-			}
-		],
-		"name": "walletOfOwner",
-		"outputs": [
-			{
-				"internalType": "uint256[]",
-				"name": "",
-				"type": "uint256[]"
-			}
-		],
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"inputs": [
-			{
-				"internalType": "address",
-				"name": "_user",
-				"type": "address"
-			}
-		],
-		"name": "whitelistUser",
-		"outputs": [],
-		"stateMutability": "nonpayable",
-		"type": "function"
-	},
-	{
-		"inputs": [
-			{
-				"internalType": "address",
-				"name": "",
-				"type": "address"
-			}
-		],
-		"name": "whitelisted",
-		"outputs": [
-			{
-				"internalType": "bool",
-				"name": "",
-				"type": "bool"
-			}
-		],
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
 		"inputs": [],
 		"name": "withdraw",
 		"outputs": [],
-		"stateMutability": "payable",
+		"stateMutability": "nonpayable",
 		"type": "function"
 	}
 ]
