@@ -1,18 +1,17 @@
 import React from "react";
 
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { connect } from "redux/blockchain/blockchainActions.js";
+// import { connect } from "redux/blockchain/blockchainActions.js";
 import { fetchData } from "redux/data/dataActions.js";
 import styled from "styled-components";
 import * as s from "assets/styles/globalStyles";
 
 import Navbar from "components/Navbars/AuthNavbar.js";
 import Footer from "components/Footers/Footer.js";
-import { data } from "autoprefixer";
 
-const truncate = (input, len) =>
-  input.length > len ? `${input.substring(0, len)}...` : input;
+// const truncate = (input, len) =>
+//   input.length > len ? `${input.substring(0, len)}...` : input;
 
 export const StyledButton = styled.button`
   padding: 10px;
@@ -297,7 +296,7 @@ function Profile() {
                     <div className="flex justify-center py-4 lg:pt-4 pt-1">
                       <div className="mr-4 p-3 text-center">
                         <span style={{ display: 'flex' }} className="text-xl font-bold block uppercase tracking-wide text-blueGray-600">
-                          {CONFIG.DISPLAY_COST}<img className="zzz-eth-logo" src="config/images/eth.png"></img>
+                          {CONFIG.DISPLAY_COST}<img className="zzz-eth-logo" src="config/images/eth.png" alt="eth"></img>
                         </span>
                         <span className="text-sm text-blueGray-400">
                           Price
@@ -354,7 +353,7 @@ function Profile() {
                       <h4 className="font-bold leading-relaxed text-xl mb-2 text-blueGray-700 mb-2">
                         1 {CONFIG.SYMBOL} costs {CONFIG.DISPLAY_COST} {CONFIG.NETWORK.SYMBOL}. {/* NFT costs */}
                       </h4>
-                      <h4 />
+                      
                       <span className="font-semibold leading-normal mb-2 text-blueGray-700 mb-2" >
                         Excluding gas fees.
                       </span>
