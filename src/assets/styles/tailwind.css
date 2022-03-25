@@ -3123,3 +3123,14 @@ select {
   background-color: var(--round-button-hover);
 }
 
+.zzz-nav-button {
+  text-align: center;
+}
+
+.zzz-nav-button:hover {
+  background-color: rgba(59, 130, 246, 0.5);
+}
+
+.zzz-nav-button:active { 
+  background-color: rgba(59, 131, 246, 0.787);
+}

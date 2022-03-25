@@ -49,33 +49,36 @@ export default function Navbar(props) {
               <li className="flex items-center">
                 {/* <PagesDropdown /> */}
               </li>
-              <li className="flex items-center">
+              <li className="flex items-center zzz-nav-button">
                 <a
                   className="lg:text-white lg:hover:text-blueGray-200 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
                   href="https://discord.gg/k8apfK65P9"
                   target="_blank"
+                  style={{width: '100%', marginLeft: '50px'}}
                 >
                   <i className="lg:text-blueGray-200 text-blueGray-400 fab fa-discord text-lg leading-lg " />
                   <span className="lg:hidden inline-block ml-2">Discord</span>
                 </a>
               </li>
 
-              <li className="flex items-center">
+              <li className="flex items-center zzz-nav-button">
                 <a
                   className="lg:text-white lg:hover:text-blueGray-200 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
                   href="https://twitter.com/thefuckingdctr"
                   target="_blank"
+                  style={{width: '100%', marginLeft: '50px'}}
                 >
                   <i className="lg:text-blueGray-200 text-blueGray-400 fab fa-twitter text-lg leading-lg " />
                   <span className="lg:hidden inline-block ml-2">Twitter</span>
                 </a>
               </li>
 
-              <li className="flex items-center">
+              <li className="flex items-center zzz-nav-button">
                 <a
                   className="lg:text-white lg:hover:text-blueGray-200 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
                   href="https://raritysniper.com/nft-drops-calendar?q=Dictator+NFT"
                   target="_blank"
+                  style={{width: '100%', marginLeft: '50px'}}
                 >
                   <i className="lg:text-blueGray-200 text-blueGray-400 fab fa fa-cog fa-spin fa-3x fa-fw text-lg leading-lg " />
                   <span className="lg:hidden inline-block ml-2">Rarity Tool</span>
