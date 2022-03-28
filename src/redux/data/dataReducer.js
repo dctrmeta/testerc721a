@@ -20,7 +20,8 @@ const dataReducer = (state = initialState, action) => {
         ...state,
         loading: false,
         totalSupply: action.payload.totalSupply,
-        // cost: action.payload.cost,
+        cost: action.payload.cost, // cost
+        WLcost: action.payload.WLcost, // WLcost
         error: false,
         errorMsg: "",
       };

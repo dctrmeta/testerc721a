@@ -29,15 +29,27 @@ export const fetchData = () => {
         .getState()
         .blockchain.smartContract.methods.totalSupply()
         .call();
-      // let cost = await store
-      //   .getState()
-      //   .blockchain.smartContract.methods.cost()
-      //   .call();
+      let cost = await store
+        .getState()
+        .blockchain.smartContract.methods.cost()
+        .call();
+
+      let isWl = await store
+        .getState()
+        .blockchain.smartContract.methods._isFuckListActive()
+        .call()
       
+      // let numAvailableToMint = await store
+      //   .getState()
+      //   .blockchain.smartContract.methods.numAvailableToMint()
+      //   .call
+
       dispatch(
         fetchDataSuccess({
           totalSupply,
-          // cost,
+          cost,
+          isWl, //
+          // numAvailableToMint, //
         })
       );
     } catch (err) {
