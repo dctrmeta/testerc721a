@@ -369,7 +369,7 @@ function Profile() {
                   <s.SpacerMedium />
                   <div className="mb-2 text-blueGray-600">
                     <StyledLink target={"_blank"} href={CONFIG.SCAN_LINK}>
-                      View contract on etherscan ➚
+                      Optimized contract on ERC721A ➚
                     </StyledLink>
                   </div>
                   {Number(data.totalSupply) >= CONFIG.MAX_SUPPLY ? (
