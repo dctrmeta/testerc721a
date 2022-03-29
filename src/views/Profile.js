@@ -179,7 +179,6 @@ function Profile() {
     let cost = CONFIG.WEI_COST;
     let WLcost = CONFIG.WL_WEI_COST;
     let gasLimit = CONFIG.GAS_LIMIT;
-    let totalCostWei = String(cost * mintAmount);
     let totalWLCostWei = String(WLcost * mintAmount);
     let totalGasLimit = String(gasLimit);// * mintAmount);
     console.log("Cost: ", totalWLCostWei);

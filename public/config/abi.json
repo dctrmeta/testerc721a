@@ -197,6 +197,19 @@
 	{
 		"inputs": [
 			{
+				"internalType": "uint8",
+				"name": "numberOfTokens",
+				"type": "uint8"
+			}
+		],
+		"name": "mintFuckListOld",
+		"outputs": [],
+		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
 				"internalType": "address",
 				"name": "_to",
 				"type": "address"
@@ -448,15 +461,15 @@
 	},
 	{
 		"inputs": [],
-		"stateMutability": "nonpayable",
-		"type": "constructor"
-	},
-	{
-		"inputs": [],
 		"name": "withdraw",
 		"outputs": [],
 		"stateMutability": "nonpayable",
 		"type": "function"
+	},
+	{
+		"inputs": [],
+		"stateMutability": "nonpayable",
+		"type": "constructor"
 	},
 	{
 		"inputs": [],
