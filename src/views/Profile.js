@@ -486,7 +486,7 @@ function Profile() {
                             >
                               {claimingNft ? "BUSY" : "MINT"}
                             </button>
-                            <button
+                            {/*<button
                               className="bg-yellow-200 active:bg-lightBlue-600 uppercase text-black font-bold hover:shadow-md shadow text-xs px-4 py-2 rounded outline-none focus:outline-none sm:mr-0 mb-1 ease-linear transition-all duration-150"
                               disabled={claimingNft ? 1 : 0}
                               style={{
@@ -499,7 +499,7 @@ function Profile() {
                               }}
                             >
                               {claimingNft ? "BUSY" : "WL MINT"}
-                            </button>
+                            </button>*/}
                           </s.Container>
                         </>
                       )}
