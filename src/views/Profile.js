@@ -388,7 +388,7 @@ function Profile() {
                   ) : (
                     <>
                       <h3 className="text-4xl font-semibold leading-normal mb-2 text-blueGray-700 mb-2">
-                        Public Sale - April, 5, 2022
+                        Public Sale - soon
                       </h3>
                       <h4 className="font-bold leading-relaxed text-xl mb-2 text-blueGray-700 mb-2">
                         PUBLIC SALE PRICE - {CONFIG.DISPLAY_COST} {CONFIG.NETWORK.SYMBOL} {/* NFT costs */}
