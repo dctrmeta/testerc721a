@@ -255,15 +255,16 @@ function Profile() {
       <main className="profile-page">
         <section className="relative block h-500-px">
           <div
-            className="absolute top-0 w-full h-full bg-center bg-cover"
+            className="bg-image absolute top-0 w-full h-full bg-center bg-cover"
             style={{
               backgroundImage:
-                "url(config/images/bg.png)",
+                "url(config/images/dctr.png)",
+              backgroundRepeat: "repeat-x",
             }}
           >
             <span
               id="blackOverlay"
-              className="w-full h-full absolute opacity-50 bg-black"
+              className="w-full h-full absolute opacity-50"
             ></span>
           </div>
           <div
